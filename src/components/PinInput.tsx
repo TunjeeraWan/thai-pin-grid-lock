@@ -32,20 +32,23 @@ const PinInput = () => {
           <div
             key={index}
             className={`w-3 h-3 rounded-full ${
-              index < pin.length ? 'bg-pin-active' : 'bg-pin-inactive'
+              index < pin.length
+                ? 'bg-pin-active' // วงที่กรอกแล้ว: สีเขียวทึบ
+                : 'border border-pin-active bg-transparent' // วงที่ยังไม่กรอก: ขอบเขียว พื้นโปร่ง
             }`}
           />
         ))}
       </div>
     );
   };
+  
 
   const renderNumberButton = (number: string) => {
     return (
       <Button
         key={number}
         variant="ghost"
-        className="w-16 h-16 rounded-full border-2 border-pin-button-border bg-background hover:bg-gray-50 text-pin-text text-2xl font-normal p-0"
+        className="w-16 h-16 flex items-center justify-center rounded-full border-2 border-pin-button-border bg-background hover:bg-gray-100 text-pin-text text-xl font-normal p-0 text-center"
         onClick={() => handleNumberClick(number)}
       >
         {number}
@@ -104,7 +107,7 @@ const PinInput = () => {
         {renderPinIndicators()}
 
         {/* Number Pad */}
-        <div className="grid grid-cols-3 gap-3 mb-8">
+        <div className="grid grid-cols-3 gap-x-0 gap-y-3 mb-8 ml-9">
           {/* Row 1: 1, 2, 3 */}
           {['1', '2', '3'].map(renderNumberButton)}
           
