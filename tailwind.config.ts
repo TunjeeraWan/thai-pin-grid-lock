@@ -61,6 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				pin: {
+					active: 'hsl(var(--pin-active))',
+					inactive: 'hsl(var(--pin-inactive))',
+					'button-border': 'hsl(var(--pin-button-border))',
+					text: 'hsl(var(--pin-text))',
+					link: 'hsl(var(--pin-link))',
+					background: 'hsl(var(--pin-background))'
 				}
 			},
 			borderRadius: {

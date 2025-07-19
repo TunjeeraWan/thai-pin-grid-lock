@@ -36,6 +36,14 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
+    /* PIN Interface Colors */
+    --pin-active: 168 76% 42%;
+    --pin-inactive: 0 0% 90%;
+    --pin-button-border: 0 0% 85%;
+    --pin-text: 222.2 84% 4.9%;
+    --pin-link: 168 76% 42%;
+    --pin-background: 0 0% 98%;
+
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
