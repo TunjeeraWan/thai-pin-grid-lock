@@ -104,7 +104,7 @@ const PinInput = () => {
         {renderPinIndicators()}
 
         {/* Number Pad */}
-        <div className="grid grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-3 gap-4 mb-8">
           {/* Row 1: 1, 2, 3 */}
           {['1', '2', '3'].map(renderNumberButton)}
           
